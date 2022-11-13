@@ -2,19 +2,21 @@ from PIL import Image, ImageFilter
 
 img = Image.open("./Pokedex/pikachu.jpg")
 
-filitered_image = img.filter(ImageFilter.BLUR)
-filitered_image.save('blurred.png', 'png')
+blurred_image = img.filter(ImageFilter.BLUR)
+blurred_image.save('blurred.png', 'png')
 
-filitered_image2 = img.filter(ImageFilter.SMOOTH)
-filitered_image2.save('smooth.png', 'png')
+smooth_image = img.filter(ImageFilter.SMOOTH)
+smooth_image.save('smooth.png', 'png')
 
-filitered_image3 = img.filter(ImageFilter.SHARPEN)
-filitered_image3.save('sharpen.png', 'png')
+sharpen_image = img.filter(ImageFilter.SHARPEN)
+sharpen_image.save('sharpen.png', 'png')
 
-filitered_image4 = img.convert('L')
-filitered_image4.save('grey.png', 'png')
+grey_image = img.convert('L')
+grey_image.save('grey.png', 'png')
 
-filitered_image5 = img.rotate(90)
-filitered_image5.save('rotated.png', 'png')
+rotate_image = img.rotate(90)
+rotate_image.save('rotated.png', 'png')
 
+resize_image = img.resize((300,300))
+resize_image.save('resized.png', 'png')
 
