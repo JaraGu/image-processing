@@ -28,5 +28,5 @@ img2 = Image.open('./j.jpg')
 resize_image2 = img2.resize((400, 200))
 resize_image2.save('j_resized.png', 'png')
 
-img2.thumbnail((400,200))
-img2.save('jthumb.png','png')
+img2.thumbnail((400, 200))
+img2.save('jthumb.png', 'png')
