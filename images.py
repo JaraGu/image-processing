@@ -20,6 +20,10 @@ rotate_image.save('rotated.png', 'png')
 resize_image = img.resize((220, 220))
 resize_image.save('resized.png', 'png')
 
-cr0p_dimension=(150,150,350,350)
-cr0ped_image= img.crop(cr0p_dimension)
-cr0ped_image.save('cr0ped.png','png')
+cr0p_dimension = (150, 150, 350, 350)
+cr0ped_image = img.crop(cr0p_dimension)
+cr0ped_image.save('cr0ped.png', 'png')
+
+img2 = Image.open('./j.jpg')
+resize_image2 = img2.resize((300, 300))
+resize_image2.save('j_resized.png','png')
