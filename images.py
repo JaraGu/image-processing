@@ -10,3 +10,6 @@ filitered_image2.save('smooth.png', 'png')
 
 filitered_image3 = img.filter(ImageFilter.SHARPEN)
 filitered_image3.save('sharpen.png', 'png')
+
+filitered_image4 = img.convert('L')
+filitered_image4.save('grey.png', 'png')
