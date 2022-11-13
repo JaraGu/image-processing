@@ -17,6 +17,9 @@ grey_image.save('grey.png', 'png')
 rotate_image = img.rotate(90)
 rotate_image.save('rotated.png', 'png')
 
-resize_image = img.resize((220,220))
+resize_image = img.resize((220, 220))
 resize_image.save('resized.png', 'png')
 
+cr0p_dimension=(150,150,350,350)
+cr0ped_image= img.crop(cr0p_dimension)
+cr0ped_image.save('cr0ped.png','png')
