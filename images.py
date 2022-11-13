@@ -7,3 +7,6 @@ filitered_image.save('blurred.png', 'png')
 
 filitered_image2 = img.filter(ImageFilter.SMOOTH)
 filitered_image2.save('smooth.png', 'png')
+
+filitered_image3 = img.filter(ImageFilter.SHARPEN)
+filitered_image3.save('sharpen.png', 'png')
