@@ -13,3 +13,8 @@ filitered_image3.save('sharpen.png', 'png')
 
 filitered_image4 = img.convert('L')
 filitered_image4.save('grey.png', 'png')
+
+filitered_image5 = img.rotate(90)
+filitered_image5.save('rotated.png', 'png')
+
+
