@@ -25,5 +25,8 @@ cr0ped_image = img.crop(cr0p_dimension)
 cr0ped_image.save('cr0ped.png', 'png')
 
 img2 = Image.open('./j.jpg')
-resize_image2 = img2.resize((300, 300))
-resize_image2.save('j_resized.png','png')
+resize_image2 = img2.resize((400, 200))
+resize_image2.save('j_resized.png', 'png')
+
+img2.thumbnail((400,200))
+img2.save('jthumb.png','png')
